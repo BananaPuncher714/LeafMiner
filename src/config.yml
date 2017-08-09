@@ -1,0 +1,6 @@
+# LEAFMINER CONFIGURATION
+speed: 40
+hunger-rate: 20
+max-limit: 400
+radius: 6
+drop-mode: 0

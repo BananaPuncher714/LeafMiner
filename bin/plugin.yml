@@ -1,0 +1,73 @@
+name: LeafMiner
+main: io.github.bananapuncher714.LeafMinerMain
+version: 3.2
+author: BananaPuncher714
+commands:
+  leafminer:
+    description: The base of all leafminer commands, also displays the help page.
+    aliases: [lm]
+    permission: leafminer.mine
+    help:
+      description: Displays the help page.
+      permission: leafminer.help
+    version:
+      description: Displays the version.
+      permission: leafminer.version
+    reload:
+      description: Reloads the config.
+      permission: leafminer.reload
+    clear:
+      description: Clears the blocks that still have to be broken, use when you want to stop leafmining in case you made a big mistake( like mining all the stone in the world with no limit or radius ).
+      permission: leafminer.clear
+    set:
+      hunger:
+        description: Sets how many blocks must be destroyed before reducing 1 point of hunger when using LeafMiner.
+        permission: leafminer.set.hunger
+      radius:
+        description: Sets the maximum radius allowed for the blocks to be destroyed
+        permission: leafminer.set.radius
+      speed:
+        description: Sets the amount of blocks broken per tick
+        permission: leafminer.set.speed
+      limit:
+        description: Sets the limit of blocks that can be destroyed.
+        permission: leafminer.set.limit
+      mode:
+        description: Sets the way blocks drop when mined.
+        permission: leafminer.set.mode
+
+permissions:
+  leafminer.mine:
+    description:
+    default: true
+  leafminer.avoidhunger:
+    description:
+    default: op
+  leafminer.reload:
+    description: Lets you reload the config.
+    default: op
+  leafminer.help:
+    description:
+    default: true
+  leafminer.reload:
+    description:
+    default: op
+  leafminer.clear:
+    description:
+    default: true
+  leafminer.set.hunger:
+    description:
+    default: op
+  leafminer.set.radius:
+    description:
+    default: op
+  leafminer.set.speed:
+    description:
+    default: op
+  leafminer.set.limit:
+    description:
+    default: op
+  leafminer.set.mode:
+    description:
+    default: op
+    
